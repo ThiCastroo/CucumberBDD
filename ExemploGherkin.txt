@@ -1,0 +1,7 @@
+Feature: Login no aplicativo
+	Scenario: Login com credenciais válidas
+		Given que o usuário está na página de login
+		When o usuário entrar com user "admin" e senha "123"
+		And clicas no botão Entrar
+		Then o aplicativo direciona para a tela inicial
+		And mostra o nome do usuário logado
